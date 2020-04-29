@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CBTF Scheduler</title>
+  <link rel="stylesheet" href="/sched/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/sched/css/style.css"  />
+  <link rel="stylesheet" href="/sched/css/tablesorter-default.css" />
+  <link rel="icon" href="/sched/img/illinois.png"/>
+  <script type="text/javascript" src="/sched/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/sched/js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="/sched/js/clipboard.min.js"></script>
+
+  <script type="text/javascript" src="/sched/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="/sched/js/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+  <script type="text/javascript" src="/sched/js/js.cookie.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="navbar-brand" src='/sched/img/illinois.png'>
+            <a class="navbar-brand" href="/sched">Computer-Based Testing</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class='active'><a href="https://cbtf.engr.illinois.edu/sched">Scheduler</a></li>
+                <li class=''><a href="https://cbtf.engr.illinois.edu/">Documentation</a></li>
+                <li><a href="https://cbtf.engr.illinois.edu/contact.html">Get Help</a></li>
+                <li><a href="https://cbtf.engr.illinois.edu/report-cheating.html">Report Cheating</a></li>
+            </ul>
+
+            <div class="nav navbar-nav navbar-right" style='padding-right: 5px'>
+                <p class="navbar-text">Apr 29, 4:20 pm</p>
+                <a href="/Shibboleth.sso/Logout" class="btn btn-default navbar-btn">Log out</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--
+                <img src="/sched/img/jack_o_lantern.png" alt="jack o' lantern clipart" height=50px
+                title="Trick or treat!" style="margin-bottom:5px;margin-left:10px;" class="navbar-left">
+            <img src="/sched/img/turkey_icon.png" alt="thanksgiving clipart" class="navbar-left" height=50px
+            style="margin-bottom:5px;margin-left:10px;">
+            -->
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-2">
+
+                        <div class="navbar-collapse">
+     
+        <div class="navbar-text">
+          Spring 2020
+        </div>
+        
+      
+
+        <ul class="nav navbar-nav">
+          <li><a href="/sched/">My Schedule</a></li>
+          
+          
+          
+        </ul>
+        
+       </div><!--/.nav-collapse -->
+
+
+                <!-- Scheduler doesn't use search
+                <div class="nav navbar-nav navbar-right" style='padding-right: 5px'>
+                    {{> searchmenu }}
+                </div>
+                -->
+            </div>
+        </div><!-- row -->
+        
+    </div>
+</nav>
+
+<div class="container">
+<div class="row alert alert-danger">
+The Computer-Based Testing Facility will remain closed during the suspended
+face-to-face instruction period. Check with your course to see their plan
+for alternative modes of testing.
+</div>
+</div>
+
+
+
+  <div class="container">
+
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  });
+</script>
+
+<ul class="nav nav-tabs">
+    <li >
+        <a href="/sched/user/294638"><i class="glyphicon glyphicon-user"></i> Tony Xuetao Tan (tonytan2@illinois.edu)</a>
+    </li>
+    <li class="active">
+
+    <a href="/sched/user/294638/future"><i class="glyphicon glyphicon-calendar"></i> Future exams</a></li>
+
+    <li >
+        <a href="/sched/user/294638/settings">
+        <i class="glyphicon glyphicon-cog"></i> Personal settings</a>
+    </li>
+</ul>
+
+
+<div  class="alert alert-danger">
+    <ul>
+        <li><strong>The following upcoming exams are planned for your courses, but schedules may change.</strong></li>
+        <li>Check your main schedule page for reservation actions.</li>
+        <li>Exams usually become available to reserve 2 weeks before they start.</li>
+    </ul>
+</div>
+
+<table class="table">
+
+<tr>
+    <th>Course</th>
+    <th>Exam</th>
+    <th>Duration</th>
+    <th>Starting date</th>
+    <th>Ending date</th>
+</tr>
+
+
+<tr>
+<td>CS 233 SELF-PACED</td>
+<td>Exam 6.2 <em>(optional)</em> 
+    </td>
+<td>
+ 
+<span class="label label-info">1hr 50min</span>
+
+</td>
+<td>2020-02-24</td>
+<td>2020-04-30</td>
+</tr>
+
+
+
+<tr>
+<td>CS 233</td>
+<td>Exam 6.2 <em>(optional)</em> 
+    </td>
+<td>
+ 
+<span class="label label-info">1hr 50min</span>
+
+</td>
+<td>2020-04-28</td>
+<td>2020-04-30</td>
+</tr>
+
+
+
+<tr>
+<td>CS 225</td>
+<td>Quiz 11 
+    </td>
+<td>
+ 
+<span class="label label-white">50min</span>
+
+</td>
+<td>2020-05-01</td>
+<td>2020-05-04</td>
+</tr>
+
+
+
+<tr>
+<td>CS 225</td>
+<td>Final exam 
+    </td>
+<td>
+ 
+<span class="label label-info">3hr</span>
+
+</td>
+<td>2020-05-07</td>
+<td>2020-05-13</td>
+</tr>
+
+
+
+<tr>
+<td>CS 233</td>
+<td>Final exam 
+    </td>
+<td>
+ 
+<span class="label label-info">3hr</span>
+
+</td>
+<td>2020-05-07</td>
+<td>2020-05-13</td>
+</tr>
+
+
+</table>
+
+  </div>
+  <br>
+  <br>
+  <script type="text/javascript" src="/sched/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/sched/js/lodash.min.js"></script>
+</body>
+</html>
+
